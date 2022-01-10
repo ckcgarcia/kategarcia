@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Looped | Log in & Sign up Form</title>
+	    <link rel="shortcut icon" href="">
+		<!-- meta data of the webpage SEARCH ENGINE OPTIMIZATION  -->
+		<meta charset="utf-8">
+		<meta name="author"  content="Kate Garcia">
+		<meta name="description" content="Amigurumi Patterns" >
+		<meta name="keywords" content=" crochet, crafts, amigurumi, pattern, online shop">
+		<meta http-equiv="refresh" content = ""/>
+
+
+  <!-- External css using link tag --> 
+   <!--For CSS-->
+  <link rel="stylesheet" href="bs/css/bootstrap.css">
+  <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+  <link rel="stylesheet" href="form.css">
+
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+     <script type="text/javascript" src="formslider.js"></script>
+  
+  
+</head>
+<body>
+  
+    <section class="vh-100 bg-light">
+	
+		<div class="cont-img">
+			<img src="images/collage.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		</div>
+		
+      <!--
+        This is the login and sign up form in the right side.
+        
+        Error Message - This message is hidden, the text will change and will only appear if the user click submit without answering the fields
+        showregister - To slide and show the registration form, same with showlogin.
+      -->
+
+  <div id="w" class="container  h-100">
+    <a href="index.html" class="previous">&laquo; Back To Main Page</a>
+
+    <div id="page" class="row d-flex justify-content-left align-items-center h-100">
+
+        <div id="content-login">
+            <div class="card-body p-5">
+        
+                    
+        
+              <h2 class="fw-bold mb-2 text-uppercase text-center align-text-top">Login</h2>
+              <br>
+              <form id="form1" class="form" autocomplete="off">
+      
+                <div class="form-outline form-f mb-4 form-controlled">
+                  <label class="form-label" for="typeEmailX">Email</label>
+                  <input type="email" id="email" class="form-control"  placeholder="Enter email" />
+              
+                  <small>Error message</small>
+                 
+                </div>
+      
+              <div class="form-outline form-white mb-4 form-controlled">
+                <label class="form-label" for="typePasswordX">Password</label>
+                <input type="password" id="password" class="form-control"   placeholder="Enter password"/>
+                <small>Error message</small>
+             
+              </div>
+      
+              
+              <div class=" text-center">
+                <button class="btn btn-outline-dark btn-lg px-4 form-control " type="submit">Login</button>
+              </div>
+              <br>
+              
+              <p class="mb-0 text-center text-dark"><a href="#!" class="text-white-18 " style="color: gray;" id="showregister">Don't Have An Account? →</a></p>
+      
+      
+            </form>
+        </div>
+          </div>
+          <!-- /end #content-login -->
+
+    <div id="content-register">
+      <div class="card-body p-5">
+
+        <br><br><br>
+        <h2 class="fw-bold mb-2 text-uppercase text-center">Register with Us</h2>
+        <br><br>
+    <form id="form2" class="form" autocomplete="off">
+
+        <div class="form-outline form-f mb-4 form-controlled">
+            <label class="form-label" for="typeUsername">Username</label>
+            <input type="text" id="username" class="form-control"  placeholder="Enter username" />
+            <small>Error message</small>
+          </div>
+     
+          <div class="form-outline form-f mb-4 form-controlled">
+            <label class="form-label" for="typeEmailX">Email</label>
+            <input type="text" id="email1"  class="form-control"  placeholder="Enter email">
+            <small>Error message</small>
+        </div>
+        <div class="form-outline form-f mb-4 form-controlled">
+            <label class="form-label" for="typePassword">Password</label>
+            <input type="password" id="password2" placeholder="Enter password" class="form-control">
+            <small>Error message</small>
+        </div>
+        <div class="form-outline form-f mb-4 form-controlled">
+            <label class="form-label" for="typeConfirmPassword">Confirm-Password</label>
+            <input type="password" id="confirmpassword" placeholder="Enter password" class="form-control">
+            <small>Error message</small>
+        </div>
+        <div class=" text-center">
+            <button class="btn btn-outline-dark btn-lg px-4 form-control " type="submit">Sign Up</button>
+          </div>
+          <br>
+          <p class="mb-0 text-center text-dark"><a href="#!" class="text-white-18 " style="color: gray;" id="showlogin">← Already Have an Account? Login Now</a></p>
+
+
+        
+    </form>
+
+      </div></div></div></div>
+    </section>
+<!--This script links the validation code for the form.-->
+<script src="validation.js"></script>
+ 
+</body>
+</html>
